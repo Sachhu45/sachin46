@@ -1,0 +1,82 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            text-decoration: none;
+        }
+        .logo{
+            background-color: rgb(128, 241, 241);height: 80px;
+        }
+        .logo{
+            display: flex;  align-items: center; justify-content: space-between;
+            }
+            li{
+                list-style: none; display: inline;
+            }
+            li a{
+                color: rgb(28, 27, 27); font-weight: bold; font-size: 20px; margin-right: 13px;
+            }
+    </style>
+</head>
+<body>
+
+<header>
+  
+    <div class="logo" id="head">
+    
+     <div> <h1>DELICIOUS CAKES</h1></div> 
+    
+    <nav>
+        <ul>
+            <li><a href="Project.html">Home</a></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </nav>
+    </div>
+<section id="cake-list"></section>
+    <CENTER><h2>OUR CAKES</h2></CENTER>
+    <div class="cake" id="cake1">
+        <img src="images/chokolate.jpg" alt="Chocolate Cake" height="500px" width="850px">
+        <h3>Chocolate Cake</h3>
+        <p>$10</p>
+        <button class="add-to-cart" data-id="1" data-name="Chocolate Cake" data-price="10">Add to Cart</button>
+    </div>
+    <div class="cake" id="cake2">
+        <img src="images/vanilla.jpg" alt="Vanilla Cake" height="500px" width="850px">
+        <h3>Vanilla Cake</h3>
+        <p>$15</p>
+        <button class="add-to-cart" data-id="2" data-name="Vanilla Cake" data-price="15">Add to Cart</button>
+    </div>
+    <div class="cake" id="cake3">
+        <img src="images/Strawberry.avif" alt="Strawberry Cake"height="500px" width="850px">
+        <h3>Strawberry Cake</h3>
+        <p>$12</p>
+        <button class="add-to-cart" data-id="3" data-name="Strawberry Cake" data-price="12">Add to Cart</button>
+    </div>
+</section>
+
+<section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button id="checkout">Checkout</button>
+</section>
+<style>
+    footer{
+        background-color: black;
+    }
+    footer p{
+        
+        color: aliceblue;
+    }
+</style>
+<footer>
+    <center><p>&copy; 2024 Delicious Cakes. All Rights Reserved.</p></center>
+</footer>
+
+<script src="Project.js"></script>
